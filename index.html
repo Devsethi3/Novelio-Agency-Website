@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novelio | Devsethi</title>
+
+    <!-- 
+        Link Custom CSS File
+     -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Locomotive Link -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"></script>
+
+    <!-- Remix-icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header section starts -->
+
+    <header class="header-section container">
+        <nav class="flex">
+            <a href="#"><img src="assets/Nav-logo.png" alt=""></a>
+            <div class="nav-link">
+            <div class="nav-icon" onclick="hideMenu()"><i class="ri-close-line"></i></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" id="page"">Page<i class=" ri-arrow-down-s-line"></i></a>
+                        <div class="page-dropdown">
+                            <p>Features <i class="ri-arrow-right-line"></i></p>
+                            <p>Surveys <i class="ri-arrow-right-line"></i></p>
+                            <p>FAQ <i class="ri-arrow-right-line"></i></p>
+                            <p>Style Guide <i class="ri-arrow-right-line"></i></p>
+                            <p>Licenses <i class="ri-arrow-right-line"></i></p>
+                            <p>Changeblog <i class="ri-arrow-right-line"></i></p>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <button class="primary-btn">Sign Up</button>
+            <div id="menu" onclick="showMenu()" class="nav-icon"><i class="ri-menu-3-line"></i></div>
+        </nav>
+    </header>
+
+    <!-- Header section ends -->
+
+    <!-- Hero section starts -->
+
+    <div class="fly-item"><img src="assets/award-shape-2.png" alt=""></div>
+    <div class="hero-section flex">
+        <div class="hero-section-heading flex container">
+            <h1>Solutions for business life</h1>
+            <p>For startups, our business provides a comprehensive solution to streamline operations, manage projects,
+                and collaborate effectively. From task delegation to team communication.</p>
+            <div class="hero-shape"><img src="assets/hero-shape.png" alt=""></div>
+            <div class="buttons flex">
+                <button class="primary-btn">Get Started</button>
+                <button class="secondary-btn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="hero-section-image">
+            <img src="assets/hero-image.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Hero section ends -->
+
+    <!-- Brands section starts -->
+
+    <div class="brand-section container">
+        <div class="brand-heading">
+            <h6>From start-ups to Fortune
+                <span>400+</span>
+                we partner with brands of all sizes
+            </h6>
+        </div>
+        <div class="brand-logos flex">
+            <div class="brand-logos-1"><img src="assets/brand-1.svg" alt=""></div>
+            <div class="brand-logos-2"><img src="assets/brand-2.svg" alt=""></div>
+            <div class="brand-logos-3"><img src="assets/brand-3.svg" alt=""></div>
+            <div class="brand-logos-4"><img src="assets/brand-4.svg" alt=""></div>
+            <div class="brand-logos-5"><img src="assets/brand-5.svg" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Brands section ends -->
+
+    <!-- Feature section starts -->
+
+    <div class="feature-section container">
+        <h6><span>Our Features</span></h6>
+        <h2>The features that make our business unique</h2>
+        <div class="feature-sub-section flex">
+            <div class="feature-sub-section-box flex">
+                <img src="assets/search.svg" alt="">
+                <div class="feature-shape"><img src="assets/award-shape-2.png" alt=""></div>
+                <div class="feature-sub-section-box-text">
+                    <h3>Qualitative Research</h3>
+                    <p>Exploring the Depths of Experience through Qualitative Research for Meaningful Insights.</p>
+                </div>
+            </div>
+            <div class="feature-sub-section-box flex">
+                <img src="assets/social marketing.svg" alt="">
+                <div class="feature-shape"><img src="assets/award-shape-2.png" alt=""></div>
+                <div class="feature-sub-section-box-text">
+                    <h3>Social Marketing</h3>
+                    <p>Leveraging the Power of Social Marketing to Foster Meaningful Drive Impactful Results.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="feature-sub-section flex">
+            <div class="feature-sub-section-box flex">
+                <img src="assets/analysis.svg" alt="">
+                <div class="feature-shape"><img src="assets/award-shape-2.png" alt=""></div>
+                <div class="feature-sub-section-box-text">
+                    <h3> Reporting & Analysis</h3>
+                    <p>Empowering Decision-Making through Comprehensive Reporting and In-Depth Analysis of Key Data
+                        Insights.</p>
+                </div>
+            </div>
+            <div class="feature-sub-section-box flex">
+                <img src="assets/people science.svg" alt="">
+                <div class="feature-shape"><img src="assets/award-shape-2.png" alt=""></div>
+                <div class="feature-sub-section-box-text">
+                    <h3>People Science</h3>
+                    <p>Exploring the Intersection of Data for Actionable Insights into People's Behavior and
+                        Interactions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature-sub-section flex">
+            <div class="feature-sub-section-box flex">
+                <img src="assets/crypto.svg" alt="">
+                <div class="feature-shape"><img src="assets/award-shape-2.png" alt=""></div>
+                <div class="feature-sub-section-box-text">
+                    <h3>Crypto supported</h3>
+                    <p>Empowering Transactions and Security with Crypto Support for Trustworthy Digital Experiences.</p>
+                </div>
+            </div>
+            <div class="feature-sub-section-box flex">
+                <img src="assets/automatic payments.svg" alt="">
+                <div class="feature-shape"><img src="assets/award-shape-2.png" alt=""></div>
+                <div class="feature-sub-section-box-text">
+                    <h3>Automatic payments</h3>
+                    <p>Simplify Your Financial Journey with Automatic Payments for Seamless and Convenient Money
+                        Management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature section ends -->
+
+    <!-- Benefits section starts -->
+
+    <div class="benefits-section container flex">
+        <div class="benefits-section-heading flex">
+            <h6><span>Our Benefits</span></h6>
+            <h2>We are the next-gen business experience</h2>
+            <div class="benefits-section-heading-info flex">
+                <img src="assets/megaphone.png" alt="">
+                <div class="benefits-section-heading-info-text">
+                    <h3>Personalized campaigns</h3>
+                    <p>Revolutionize your marketing with powerful personalized campaigns that drive results.</p>
+                </div>
+            </div>
+            <div class="benefits-section-heading-info flex">
+                <img src="assets/mail.png" alt="">
+                <div class="benefits-section-heading-info-text">
+                    <h3>Personalized campaigns</h3>
+                    <p>Revolutionize your marketing with powerful personalized campaigns that drive results.</p>
+                </div>
+            </div>
+            <button class="secondary-btn">Get Started</button>
+        </div>
+        <div class="benefits-section-image"><img src="assets/hero-benefits.png" alt=""></div>
+    </div>
+
+    <!-- Benefits section ends -->
+
+    <!-- Ranking section starts -->
+
+    <div class="ranking-section flex">
+        <div class="ranking-text container">
+            <h2>Easily view and ranking your sites.</h2>
+        </div>
+        <div class="ranking-shape-1"><img src="assets/award-shape-1.png" alt=""></div>
+            <div class="ranking-shape-2"><img src="assets/award-shape-2.png" alt=""></div>
+        <div class="ranking-score flex">
+            <div class="ranking-score-first flex">
+                <h3>97/100</h3>
+                <div class="star flex">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Another Review Site</p>
+            </div>
+            <div class="vr-line">|</div>
+            <div class="ranking-score-first flex">
+                <h3>99/100</h3>
+                <div class="star flex">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Worldwide Review Website</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Ranking section ends -->
+
+    <!-- Business section starts -->
+
+    <div class="business-section container flex">
+        <h6><span>Secure and Reliable</span></h6>
+        <h2>The future of strategic business</h2>
+        <div class="business-section-item flex">
+            <div class="business-section-item-box">
+                <img src="assets/Individuals.jpg" alt="">
+                <div class="business-section-item-text">
+                    <h3>Individuals</h3>
+                    <p>Our app is designed to cater to needs of individuals helping you.</p>
+                </div>
+            </div>
+            <div class="business-section-item-box">
+                <img src="assets/Startups.jpg" alt="">
+                <div class="business-section-item-text">
+                    <h3>Startups</h3>
+                    <p>For startups, our app provides a comprehensive solution to streamline</p>
+                </div>
+            </div>
+            <div class="business-section-item-box">
+                <img src="assets/Enterprises.jpg" alt="">
+                <div class="business-section-item-text">
+                    <h3>Enterprises</h3>
+                    <p>Our app is equipped to meet needs of <br>large enterprises providing.</p>
+                </div>
+            </div>
+        </div>
+        <button class="primary-btn" id="business-btn">Get Started</button>
+    </div>
+
+    <!-- Business section ends -->
+
+    <!-- Clients section starts -->
+
+    <div class="clients-section clients-container flex">
+        <div class="clients-section-image">
+            <img src="assets/testimonial-banner-1.jpg" alt="">
+            <div class="clients-section-image-info flex">
+                <div class="clients-section-image-info-text">
+                    <h2>100+</h2>
+                    <p>Total Project Done</p>
+                </div>
+                <div class="vr-line-2">|</div>
+                <div class="clients-section-image-info-text">
+                    <h2>25k+</h2>
+                    <p>Worldwide Customers</p>
+                </div>
+            </div>
+        </div>
+        <div class="clients-section-text">
+            <h6><span>Client Feedback</span></h6>
+            <h2>People who already love our support</h2>
+            <img src="assets/quote.svg" alt="">
+            <p>This tech startup transformed our business with game-changing solution, streamlining operation,
+                automating processe, and boosting efficiency. Their expertise and dedication were remarkable.</p>
+            <h5>Colin Mathieu</h5>
+            <h6><span>Los Angeles, USA</span></h6>
+            <div class="slider-btn flex">
+                <img src="assets/left-arrow.png" alt="">
+                <img src="assets/right-arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Clients section ends -->
+
+    <!-- Team contribution section starts -->
+
+    <div class="contribution-section container flex">
+        <div class="contribution-section-text">
+            <h6><span>Team Contribution</span></h6>
+            <h2>Easy-to-use for connected team</h2>
+            <p>Empower your globally connected team with an intuitive, user-friendly platform for seamless
+                collaboration, productivity, success, growth, and innovation.</p>
+            <button class="secondary-btn" id="business-btn">Get Started</button>
+        </div>
+        <div class="contribution-section-image">
+            <img src="assets/team-contribution-banner-1.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Team contribution section ends -->
+
+    <!-- Newsletter section starts -->
+
+    <div class="ranking-section newsletter flex">
+        <div class="newletter-section-container-front flex">
+            <div class="newletter-section-container-front-text">
+                <h2>Subscribe to Our Newletter</h2>
+            </div>
+            <div class="newletter-section-container-front-input flex">
+                <input type="text" placeholder="Enter your Email...">
+                <div class="secondary-btn newsletter-btn">Subscribe</div>
+            </div>
+            <div class="newsletter-shape-1"><img src="assets/award-shape-1.png" alt=""></div>
+            <div class="newsletter-shape-2"><img src="assets/award-shape-2.png" alt=""></div>
+        </div>
+        <div class="newletter-section-container-back">
+        </div>
+    </div>
+
+    <!-- Newsletter section ends -->
+
+    <!-- Footer section starts -->
+
+    <footer class="footer container flex">
+        <div class="footer-shape"><img src="assets/award-shape-2.png" alt=""></div>
+        <div class="footer-text flex">
+            <img src="assets/footer-logo-white.png" alt="">
+            <p>Novelio is one of the most popular <br> tech startups driving innovation.</p>
+            <div class="footer-text-contact flex">
+                <img src="assets/telephone.png" alt="">
+                <p>+1 246-345-0695</p>
+            </div>
+            <div class="footer-text-contact flex">
+                <img src="assets/mail.png" alt="">
+                <p>info@example.com</p>
+            </div>
+            <div class="footer-text-icons flex">
+                <img src="assets/facebook.png" alt="">
+                <img src="assets/twitter.png" alt="">
+                <img src="assets/instagram.png" alt="">
+                <img src="assets/linkedin.png" alt="">
+            </div>
+        </div>
+        <div class="footer-links-1 flex">
+            <h6>Menu</h6>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Single Blog</a></li>
+                <li><a href="#">Password</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-2 flex">
+            <h6>Utility Pages</h6>
+            <ul>
+                <li><a href="#">Start Here</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Licenses</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Change Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-3 flex">
+            <h6>Template Pages</h6>
+            <ul>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Pricing Plan</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Forgot Password</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="sub-footer flex">
+        <p>Copyright &copy; Novelio | Designed by Devsethi</p>
+    </div>
+
+    <!-- Footer section ends -->
+
+    <!-- Javascript Files links -->
+
+    <!-- GSAP Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Locomotive Links -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- 
+        Link Custom JS File
+     -->
+    <script src="script.js"></script>
+</body>
+
+</html>
